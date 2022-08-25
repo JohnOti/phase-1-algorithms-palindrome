@@ -1,6 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  
+ 
+    let leftIdx = 0;
+    let rightIdx = word.length - 1;
+    
+    while (leftIdx < rightIdx) {
+    if (word[leftIdx] !== word[rightIdx]) return false;
+    leftIdx++;
+    rightIdx--;
+    }
+    return true;
+   }
+   console.log(isPalindrome("a"));
+
 
 /* 
   Add your pseudocode here
